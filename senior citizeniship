@@ -1,0 +1,77 @@
+senior citizeniship
+
+Given gender and age of a person, tell if the person is SENIOR CITIZEN or not. A male with age 60 or more years is Senior Citizen. A female with age 58 or more is Senior Citizen.
+
+Input Format
+
+One line of input containing a alphabet G in uppercase or lowercase (Gender of the person) and a number N (Age of the person) separated by space.
+
+Constraints
+
+Gender is given as one of the following options (f, F, m, M)
+
+1 <= N <= 100
+
+Output Format
+
+Print Senior Citizen or Not A Senior Citizen based on given conditions in problem statement.
+
+Sample Input 0
+
+M 60
+Sample Output 0
+
+Senior Citizen
+Submissions: 198
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+F
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        char g;
+10
+        int a;
+11
+        g=s.next().charAt(0);
+12
+        a=s.nextInt();
+13
+        if ((g == 'M' || g == 'm') && a >= 60)
+14
+        {
+15
+            System.out.println("Senior Citizen");
+16
+        }
+17
+        else if((g == 'F' || g == 'f') && a >= 58)
+18
+        {
+19
+            System.out.println("Senior Citizen");
+20
+        }
+21
+    }
+22
+}
