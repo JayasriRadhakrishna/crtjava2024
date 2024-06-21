@@ -1,0 +1,77 @@
+max of 2 nos
+
+Given two numbers, print maximum of two numbers.z
+
+Input Format
+
+A B - Two space separated integers on one line.
+
+Constraints
+
+-1018 <= A, B <= 1018
+
+Output Format
+
+Print maximum of A and B.
+
+Sample Input 0
+
+4 5
+Sample Output 0
+
+5
+Explanation 0
+
+5 is greater than 4 so, Answer is 5
+
+Submissions: 223
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        long a,b;
+10
+        a=s.nextLong();
+11
+        b=s.nextLong();
+12
+        if(a>b)
+13
+        {
+14
+            System.out.println(a);
+15
+        }
+16
+        else
+17
+        {
+18
+            System.out.println(b);
+19
+        }
+20
+    }
+21
+}
+Line: 1 Col: 1
